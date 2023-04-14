@@ -22,6 +22,7 @@ lem.send_keys(password)
 em = driver.find_element(By.CLASS_NAME, "login")
 em.send_keys(Keys.RETURN)
 print("Logged In Successfully")
+driver.close()
 
 # INTERACTING WITH WEBPAGE
 # driver.get("http://www.python.org")
