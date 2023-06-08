@@ -18,7 +18,7 @@ driver = webdriver.Chrome(options=options, service=Service(ChromeDriverManager()
 driver.maximize_window()
 driver.get("https://www.amazon.com/")
 
-search_box = driver.find_element("id", "twotabsearchtextbox")
+search_box = driver.find_element("id", "twotabsearchtextbox").click()
 search_box.send_keys('Dan Brown books')
 search_box.send_keys(Keys.RETURN)
 
